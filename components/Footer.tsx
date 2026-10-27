@@ -1,7 +1,4 @@
 /*
-File: Footer.tsx
-Author: Rupinder Kaur
-Date: October 22, 2026
 This component displays the school footer.
 It does not receive any props.
 It arranges the school name and contact details using Tailwind.
