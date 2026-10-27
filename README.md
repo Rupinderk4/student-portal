@@ -1,7 +1,7 @@
 <!-- Group Members
     Rupinder Kaur - setup, layout.tsx, page,tsx, navbar, footer, statspanel, serarchbox
     Eunice Mendez -studentPortal, addStudent, testing
-    Adrian Lexter Paule -setup, layout.tsx, page,tsx, navbar, footer, statspanel, serarchbox
+    Adrian Lexter Paule -data/students.ts, StudentList, StudentCard
 
 Overview: New Generation High School is a new school that wants a student portal. The school administrator wants to see a list of students, find a student quickly by name, see a few numbers about the school at a glance, and add and remove students.
 Your group will build the first version of the portal: a single-page React app in Next.js. In Assignment 2 you will come back to this same app and replace the add-a-student panel with a proper form that checks every answer, so build it in a way you will be glad to return to.
