@@ -4,7 +4,8 @@ Author: Eunice Mendez
 Date: October 27, 2026
 
 Overview: This file shows four inputs and an Add Student button. It gets one prop, onAdd from StudentPortal. When the button is clicked,
-it checks that both names are filled in and the grade is 9-12. 
+it checks that both names are filled in and the grade is 9-12, then sends the new student to StudentPortal. After that, the name boxes are 
+cleared and grade and average go back to 9 and 70.
 */
 
 "use client";
@@ -13,11 +14,11 @@ import {useState} from "react";
 
 //the props gets from StudentPortal
 interface AddStudentProps{
-    onAdd:(firstName: string, lastname: string, grade: number, average: number) => void;
+    onAdd:(firstName: string, lastName: string, grade: number, average: number) => void;
 }
 
 const AddStudent = ({onAdd}: AddStudentProps) =>{
-    //state for erach input, grade and average are strings because inputs always give back a string
+    //state for each input, grade and average are strings because inputs always give back a string
     const [firstName, setFirstName] = useState("");
     const[lastName, setLastName] = useState("");
     const[grade, setGrade] = useState("9");
@@ -51,7 +52,7 @@ const AddStudent = ({onAdd}: AddStudentProps) =>{
             return;
         }
 
-        //sen the new student to StudentPortal. Number() turns text into number
+        //send the new student to StudentPortal. Number() turns text into number
         onAdd(firstName, lastName, Number(grade), Number(average));
         //resets the boxes to starting value
         setFirstName("");

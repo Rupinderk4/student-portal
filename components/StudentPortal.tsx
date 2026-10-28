@@ -6,7 +6,7 @@ Date: Oct 27, 2026
 
 Overview: This file is the main part of the portal and holds the list of students and the search text in state. It doesn't take any props
 and starts with the students from data/students.ts. It works out the three numbers and the search results from the list, handles add, remove
-and clear all with a new array each time.
+and clear all with a new array each time. It shows the Overview, Students and Add a student on the page.
 */
 
 "use client";
@@ -15,7 +15,7 @@ import {students as startingStudents, Student } from "@/data/students";
 import StatsPanel from "./StatsPanel";
 import SearchBox from "./SearchBox";
 import StudentList from "./StudentList";
-import AddStudent from "@/components/AddStudent"
+import AddStudent from "@/components/AddStudent";
 
 
 const StudentPortal =() => {
